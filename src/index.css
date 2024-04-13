@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+:root {
+	--app-bg: #d8d9dd;
+	--weatherapp-bg: #ffffff;
+	--dark-text: #1a1a2d;
+	--grey-text: #d7d7d8;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body {
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 500;
+	background-color: var(--app-bg);
+	height: 100dvh;
+	width: 100vw;
+	padding: 2rem 10rem;
+}
+.app {
+	padding: 2rem 5rem;
+	background-color: var(--weatherapp-bg);
+	height: 95dvh;
+}
+.welcome {
+	height: 60dvh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.welcome p {
+	font-size: 3rem;
+	font-weight: 600;
+}
+.welcome span {
+	font-size: 2.5rem;
+	color: var(--grey-text);
+}
+.weather-display {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60dvh;
+}
+.results {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 60dvh;
+}
+.results p {
+	font-size: 2rem;
+	font-weight: 500;
+}
+.spinner {
+	padding-bottom: 2rem;
+}
+
+@media screen and (max-width: 430px) {
+	html {
+		font-size: 60%;
+	}
+	body {
+		padding: 1rem;
+	}
+	.app {
+		padding: 2rem;
+		height: 100dvh;
+	}
+	.weather-display {
+		padding-top: 10rem;
+	}
+}

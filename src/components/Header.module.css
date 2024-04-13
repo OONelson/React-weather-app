@@ -1,0 +1,48 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+.form input[type="text"] {
+	font-size: 1.4rem;
+	font-family: "Nunito Sans";
+	border-radius: 0.5rem;
+	border: 1px solid var(--dark-text);
+	padding: 0.5rem 1rem;
+	transition: all 0.3s ease-in;
+}
+.form input[type="text"]:focus {
+	border: 1px;
+	width: 150%;
+}
+
+.location {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2rem;
+}
+.location span {
+	color: var(--grey-text);
+}
+@media screen and (max-width: 390px) {
+	.form input[type="text"]:focus {
+		border: 1px;
+		width: 120%;
+	}
+}
+@media screen and (max-width: 340px) {
+	.form input[type="text"] {
+		width: 70%;
+	}
+	.form input[type="text"]:focus {
+		border: 1px;
+		width: 90%;
+	}
+}
